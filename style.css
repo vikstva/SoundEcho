@@ -7,6 +7,8 @@ body {
 .page-container {
   background: #1C1B21;
   height: 100vh;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -32,68 +34,53 @@ body {
   font-size: 14px;
 }
 
-.main {
+.main, .search__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main__banner {
+  max-width: 180px;
+  width: 100%;
+}
+
+.main__title {
+  font-size: 24px;
+  margin: 30px 0;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.datepicker {
+  width: 100%;
+  max-width: 620px;
+  height: 240px;
+  background-color: #131313;
+  border-radius: 4px;
+}
+
+.datepicker__month {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10px 20px;
+  }
+
+.datepicker__year-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    margin: 20px 0;
 }
 
-.search {
-  background-color: black;
-  margin: 0;
-  box-sizing: border-box;
-  border: none;
-  max-width: 400px;
-  width: 100%;
-  height: 30px;
-  margin-top: 25px;
-  color: white;
-  border-radius: 5px;
-}
-
-.datepicker-dropdown {
-  position: relative;
-  top: 0 !important;
-  left: 0 !important;
-}
-
-.search__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.datepicker-picker {
-  background-color: #000;
-}
-
-.datepicker-header .datepicker-controls .button {
-  border-color: white;
-  background-color: #000;
-  color: #6c63ff;
-}
-
-.datepicker-header .datepicker-controls .button:hover {
-  background-color: transparent;
-}
-
-.datepicker-cell.prev:not(.disabled) {
-  color: #3f3d56;
-}
-
-.datepicker-cell.focused:not(.selected) {
-  background-color: #6c63ff;
-}
-
-.datepicker span {
-  color: #e6e6e6cf;
-}
-
-.datepicker-cell.selected, .datepicker-cell.selected:hover {
-  background-color: #6c63ff;
-}
-
-.datepicker-cell:not(.disabled):hover {
-  background-color: #6c63ff1f;
+.datepicker__year, .datepicker__month > div {
+  background-color: #6C63FF;
+  padding: 4px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 14px;
 }
