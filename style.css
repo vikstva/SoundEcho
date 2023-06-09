@@ -67,3 +67,33 @@ body {
 .datepicker-picker {
   background-color: #000;
 }
+
+.datepicker-header .datepicker-controls .button {
+  border-color: white;
+  background-color: #000;
+  color: #6c63ff;
+}
+
+.datepicker-header .datepicker-controls .button:hover {
+  background-color: transparent;
+}
+
+.datepicker-cell.prev:not(.disabled) {
+  color: #3f3d56;
+}
+
+.datepicker-cell.focused:not(.selected) {
+  background-color: #6c63ff;
+}
+
+.datepicker span {
+  color: #e6e6e6cf;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #6c63ff;
+}
+
+.datepicker-cell:not(.disabled):hover {
+  background-color: #6c63ff1f;
+}
